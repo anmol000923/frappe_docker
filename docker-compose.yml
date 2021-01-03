@@ -23,8 +23,8 @@ services:
       # middleware redirect for production only
       - "${HTTPS_USE_REDIRECT_MIDDLEWARE_LABEL}"
     ports:
-      - "80:80"
-      - "443:443"
+      - "8989:80"
+      - "4949:443"
     volumes:
       - cert-vol:/letsencrypt
       - /var/run/docker.sock:/var/run/docker.sock:ro
